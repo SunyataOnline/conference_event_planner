@@ -30,10 +30,13 @@ const ConferenceEvent = () => {
           dispatch(decrementQuantity(index));
         }
       };
+
     const handleIncrementAvQuantity = (index) => {
+        dispatch(incrementAvQuantity(index));
     };
 
     const handleDecrementAvQuantity = (index) => {
+        dispatch(decrementAvQuantity(index));
     };
 
     const handleMealSelection = (index) => {
@@ -67,13 +70,6 @@ const ConferenceEvent = () => {
     const avTotalCost = calculateTotalCost("av");
 
 
-    const handleIncrementAvQuantity = (index) => {
-        dispatch(incrementAvQuantity(index));
-    };
-
-    const handleDecrementAvQuantity = (index) => {
-        dispatch(decrementAvQuantity(index));
-    };
 
 
     const navigateToProducts = (idType) => {
